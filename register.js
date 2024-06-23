@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.getElementById('registerForm');
     const userList = document.getElementById('userList');
-    const clearFormButton = document.getElementById('clearForm');
     const clearAllButton = document.getElementById('clearAll');
     const searchInput = document.getElementById('search');
 
@@ -60,10 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         renderUsers();
 
-        registerForm.reset();
-    });
-
-    clearFormButton.addEventListener('click', function() {
         registerForm.reset();
     });
 
